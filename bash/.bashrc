@@ -9,6 +9,8 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
   . /usr/share/bash-completion/bash_completion
 fi
 
+export HYPRSHOT_DIR="$HOME/Pictures" #FIXME: no sirve, se supone que es para definir un lugar donde se van a guardar las capturas de pantalla
+
 # --- Historial mejorado ---
 # Evita comandos duplicados en el historial.
 export HISTCONTROL=ignoredups:erasedups
