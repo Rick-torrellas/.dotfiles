@@ -1,0 +1,22 @@
+[Default Applications]
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+image/jpeg=swayimg.desktop
+image/webp=swayimg.desktop
+video/mp4=mpv.desktop
+application/x-zerosize=geany.desktop
+image/png=swayimg.desktop
+text/plain=geany.desktop
+font/ttf=com.github.FontManager.FontViewer.desktop
+
+[Added Associations]
+image/jpeg=swayimg.desktop;
+image/webp=swayimg.desktop;
+video/mp4=mpv.desktop;vlc.desktop;
+application/x-zerosize=geany.desktop;
+image/png=swayimg.desktop;
+text/plain=geany.desktop;
+font/ttf=com.github.FontManager.FontViewer.desktop;
