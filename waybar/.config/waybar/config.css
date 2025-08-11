@@ -1,0 +1,22 @@
+@define-color main-background-color rgba(237, 5, 9, 0.20);
+@define-color custom-notification-color #ff003c;
+/* clock */
+@define-color clock-color #9E910B;
+@define-color clock-background-color transparent;
+/* :root {
+    --main-background-color: rgba(220, 242, 26, 0.75);
+    --custom-notification-color: rgba(220, 242, 26, 0.75);
+    --workspace-font-family: "Predator";
+    --workspace-font-size: 25px;
+    --buton-hover-color:  rgba(220, 242, 26, 0.75);
+    --workspaces-buttons-color: rgba(220, 242, 26, 0.75);
+    --workspaces-buttons-active-color: rgba(220, 242, 26, 0.75);
+    --workspaces-buttons-urgent-color: rgba(220, 242, 26, 0.75);
+    --battery-charging-plugged-color: rgba(220, 242, 26, 0.75);
+    --battery-critical-color: rgba(220, 242, 26, 0.75);
+    --battery-warning-color: rgba(220, 242, 26, 0.75);
+    --network-disconnected-color: rgba(220, 242, 26, 0.75);
+    --pulseaudio-low-color: rgba(220, 242, 26, 0.75);
+    --pulseaudio-muted-color: rgba(220, 242, 26, 0.75);
+    --temperature-critical-color: rgba(220, 242, 26, 0.75);
+} */

@@ -6,7 +6,7 @@
   "layer": "top",
   "position": "top",
   "spacing": 5,
-  "margin-top": 5,
+  "margin-top": 12,
   "margin-left": 10,
   "margin-right": 10,
 
@@ -22,21 +22,46 @@
 
   "clock": {
     "format": "{:%H:%M}  ",
-    "timezone": "Asia/Tel_Aviv",
+    "timezone": "America/Caracas",
     "format-alt": "{:%A, %B %d-%m-%Y}"
   },
 
   "hyprland/language": {
-    "format-en": "EN",
-    "format-he": "HE"
+    "format": "  {}",
+    "format-en": "EN", // English
+    "format-pt-br": "PT-BR", // Portuguese (Brazil)
+    "format-pt-pt": "PT-PT", // Portuguese (Portugal)
+    "format-es": "ES", // Spanish
+    "format-fr": "FR", // French
+    "format-de": "DE", // German
+    "format-it": "IT", // Italian
+    "format-ru": "RU", // Russian
+    "format-ar": "AR", // Arabic
+    "format-zh": "ZH", // Chinese
+    "format-ja": "JA", // Japanese
+    "format-ko": "KO", // Korean
+    "format-ua": "UA", // Ukrainian
+    "format-tr": "TR", // Turkish
+    "format-hi": "HI", // Hindi
+    "format-id": "ID", // Indonesian
+    "format-vn": "VN", // Vietnamese
+    "format-th": "TH", // Thai
+    "format-pt": "PT", // Portuguese (generic)
+    "format-unknown": "??" // Unknown language
+    
   },
 
   "hyprland/window": {
     "format": "{title}",
     "rewrite": {
+      "(.*) - Visual Studio Code": "󰘐  $1",
+      "(.*) - Thunar": "  $1",
       "(.*) - Brave": " ",
       "(.*) - Zen-Bin": "🐉",
-      "(.*) - kitty": "> [$1]"
+      "(.*) - YouTube - Google Chrome": "    $1",
+      "(.*) - Google Chrome": "  $1",
+      "(.*) Mozilla Firefox": "  $1",
+      "(.*) - kitty": "󱤐 [$1]"
     },
     "separate-outputs": true
   },
@@ -49,13 +74,13 @@
   ],
 
   "hyprland/workspaces": {
-    "font": "noto-sans-cjk",
+      "font": "Predator",	
     "disable-scroll": false,
-    "all-outputs": true,
-    "warp-on-scroll": false,
-    "format": "{icon}",
+    "all-outputs": false,
+    "warp-on-scroll": false
+/*     "format": "{icon}",
     "format-icons": {
-      "1": "一",
+      "1": "Buenas",
       "2": "二",
       "3": "三",
       "4": "四",
@@ -64,16 +89,14 @@
       "7": "七",
       "8": "八",
       "9": "九"
-    },
-    "persistent-workspaces": {
-      "*": 9
-    }
+    } */
   },
 
   // ╔══════════════════════╗
   // ║    Modules Right      ║
   // ╚══════════════════════╝
   "modules-right": [
+    "idle_inhibitor",
     "temperature",
     "network",
     "battery",
@@ -82,7 +105,18 @@
     "custom/notification"
   ],
 
-  "temperature": {
+    "idle_inhibitor": {
+        "format": " {icon} ",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        },
+        "tooltip": true,
+        "tooltip-format-activated": "Idle Inhibitor: Activado",
+        "tooltip-format-deactivated": "Idle Inhibitor: Desactivado"
+    },
+
+    "temperature": {
     "critical-threshold": 80,
     "format": "{temperatureC}°C {icon}",
     "format-icons": ["", "", ""]
@@ -99,14 +133,26 @@
 
   "battery": {
     "states": {
-      "warning": 15,
-      "critical": 5
+      "critical": 5,
+      "semicritical": 10,
+      "warning": 20,
+      "optimal": 80,
+      "semifull": 97,
+      "full": 100
     },
     "format": "{capacity}% {icon}",
-    "format-full": "{capacity}% {icon}",
-    "format-charging": "{capacity}% ",
-    "format-plugged": "{capacity}% ",
-    "format-icons": ["", "", "", "", ""]
+    "format-critical": "{capacity}% 󱃍",
+    "format-semicritical": "{capacity}% 󰢟",
+    "format-warning": "{capacity}% 󱊡",
+    "format-optimal": "{capacity}% 󱊢",
+    "format-semifull": "{capacity}% 󱊣",
+    "format-full": "{capacity}% 󰂄",
+    "format-charging-critical": "{capacity}% 󱊤",
+    "format-charging-warning": "{capacity}% 󱊤",
+    "format-charging-optimal": "{capacity}% 󱊥",
+    "format-charging-semifull": "{capacity}% 󱊦",
+    "format-charging-full": "{capacity}% 󱃌",
+    "format-plugged": "{capacity}% 󰄌"
   },
 
   "backlight": {
@@ -115,7 +161,7 @@
   },
 
   "pulseaudio": {
-    "format": "{volume}% {icon} {format_source}",
+    "format": "{volume}% {icon}  {format_source}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": " {format_source}",
@@ -132,7 +178,6 @@
     },
     "on-click": "pavucontrol"
   },
-
   "custom/notification": {
     "tooltip": false,
     "format": "{icon}",

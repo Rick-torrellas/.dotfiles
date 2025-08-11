@@ -1,2 +1,21 @@
 [mgr]
 show_hidden = true
+
+[opener]
+edit = [
+    { run = "nano", block = true }
+]
+open = [
+    { run = "nano", block = true },
+    { run = "code", block = false }
+]
+rules = [
+    # Regla para archivos de audio: usa mpv
+    { mime = "audio/*", use = [ { run = "mpv", block = false } ] },
+
+    # Regla para archivos de imagen: usa feh
+    { mime = "image/*", use = [ { run = "feh", block = false } ] },
+
+    # Regla para archivos de video: usa mpv
+    { mime = "video/*", use = [ { run = "mpv", block = false } ] }
+]
