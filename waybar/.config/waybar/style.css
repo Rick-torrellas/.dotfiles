@@ -2,6 +2,14 @@
 @import url("styles/modules.css");
 @import url("styles/button.css");
 @import url("styles/workspaces.css");
+@import url("styles/temperature.css");
+@import url("styles/window.css");
+@import url("styles/pulseaudio.css");
+@import url("styles/network.css");
+@import url("styles/custom.css");
+@import url("styles/clock.css");
+@import url("styles/baterry.css");
+@import url("styles/backlight.css");
 
 /* ╔═════════════════════════════╗
    ║     Global & Random   ║
@@ -19,70 +27,6 @@ window#waybar {
   -o-border-radius: 15px;
 }
 
-/* ╔═════════════════════════════╗
-   ║     Module Element Colors   ║
-   ╚═════════════════════════════╝ */
-
-#clock {
-  color: blue;
-  text-shadow: 0 0 10px red;
-  background-color: @clock-background-color;
-}
-
-#language {
-  color: #ff003c;
-  text-shadow: 0 0 10px blue;
-  background-color: @clock-background-color;
-}
-
-#window {
-  color: #ff003c;
-  text-shadow: 0 0 10px #ff003c;
-  background-color: @clock-background-color;
-}
-
-#workspaces {
-  color: #ff003c;
-  text-shadow: 0 0 10px #ff003c;
-  background-color: @clock-background-color;
-}
-
-#temperature {
-  color: #ff003c;
-  text-shadow: 0 0 10px #ff003c;
-  background-color: @clock-background-color;
-}
-
-#network {
-  color: #ff003c;
-  text-shadow: 0 0 10px #ff003c;
-  background-color: @clock-background-color;
-}
-
-#battery {
-  color: #ff003c;
-  text-shadow: 0 0 10px #ff003c;
-  background-color: @clock-background-color;
-}
-
-#backlight {
-  color: #ff003c;
-  text-shadow: 0 0 10px #ff003c;
-  background-color: @clock-background-color;
-}
-
-#pulseaudio {
-  color: #ff003c;
-  text-shadow: 0 0 10px #ff003c;
-  background-color: @clock-background-color;
-}
-
-#custom-notification {
-  color: #ff003c;
-  text-shadow: 0 0 10px #ff003c;
-  background-color: @clock-background-color;
-}
-
 #clock,
 #languaje,
 #window,
@@ -96,71 +40,7 @@ window#waybar {
   padding: 0 10px;
 }
 
-
-
-#battery.charging,
-#battery.plugged {
-  color: #00f0ff;
-}
-
-#battery.warning {
-  color: #fcee09;
-}
-#battery.critical {
-  color: #fcee09;
-}
-#network.disconnected {
-  color: #fcee09;
-}
-#pulseaudio.low {
-  color: #fcee09;
-}
-#pulseaudio.muted {
-  color: #fcee09;
-}
-#temperature.critical {
-  color: #fcee09;
-}
-
-#battery.critical:not(.charging) {
-  color: #fcee09;
-  background-color: transparent;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: steps(12);
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes blink {
-  to {
-    background-color: #ffffff;
-    color: #000000;
-  }
-}
-
 label:focus {
   background-color: #000000;
 }
 
-/* ╔══════════════════════════════════╗
-   ║     Custom Media (e.g. Spotify)  ║
-   ╚══════════════════════════════════╝ */
-
-#custom-media {
-  background-color: #66cc99;
-  color: #2a5c45;
-  min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-  background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-  background-color: #ffa000;
-}
-
-#custom-notification {
-  padding: 0 15px;
-}

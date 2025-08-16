@@ -11,14 +11,33 @@
   "margin-right": 10,
 
   // ╔═════════════════════╗
-  // ║     Modules Left     ║
+  // ║     Modules config      ║
   // ╚═════════════════════╝
+
   "modules-left": [
     "clock",
     "hyprland/language",
     "custom/media",
     "hyprland/window"
   ],
+
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-right": [
+    "idle_inhibitor",
+    "temperature",
+    "network",
+    "battery",
+    "backlight",
+    "pulseaudio",
+    "custom/notification"
+  ],
+
+  // ╔══════════════════════╗
+  // ║    Modules               ║
+  // ╚══════════════════════╝
 
   "clock": {
     "format": "{:%H:%M}  ",
@@ -66,12 +85,8 @@
     "separate-outputs": true
   },
 
-  // ╔══════════════════════╗
-  // ║    Modules Center     ║
-  // ╚══════════════════════╝
-  "modules-center": [
-    "hyprland/workspaces"
-  ],
+
+  
 
   "hyprland/workspaces": {
       "font": "Predator",	
@@ -95,21 +110,13 @@
   // ╔══════════════════════╗
   // ║    Modules Right      ║
   // ╚══════════════════════╝
-  "modules-right": [
-    "idle_inhibitor",
-    "temperature",
-    "network",
-    "battery",
-    "backlight",
-    "pulseaudio",
-    "custom/notification"
-  ],
+  
 
     "idle_inhibitor": {
         "format": " {icon} ",
         "format-icons": {
-            "activated": "",
-            "deactivated": ""
+            "activated": "",
+            "deactivated": ""
         },
         "tooltip": true,
         "tooltip-format-activated": "Idle Inhibitor: Activado",
@@ -133,25 +140,44 @@
 
   "battery": {
     "states": {
-      "critical": 5,
-      "semicritical": 10,
-      "warning": 20,
-      "optimal": 80,
-      "semifull": 97,
-      "full": 100
+      "_5": 5,
+      "_10": 10,
+      "_20": 20,
+      "_30": 30,
+      "_40": 40,
+      "_50": 50,
+      "_60": 60,
+      "_70": 70,
+      "_80": 80,
+      "_90": 90,
+      "_95": 95,
+      "_100": 100
     },
     "format": "{capacity}% {icon}",
-    "format-critical": "{capacity}% 󱃍",
-    "format-semicritical": "{capacity}% 󰢟",
-    "format-warning": "{capacity}% 󱊡",
-    "format-optimal": "{capacity}% 󱊢",
-    "format-semifull": "{capacity}% 󱊣",
-    "format-full": "{capacity}% 󰂄",
-    "format-charging-critical": "{capacity}% 󱊤",
-    "format-charging-warning": "{capacity}% 󱊤",
-    "format-charging-optimal": "{capacity}% 󱊥",
-    "format-charging-semifull": "{capacity}% 󱊦",
-    "format-charging-full": "{capacity}% 󱃌",
+    "format-_5": "{capacity}% 󰂎",
+    "format-_10": "{capacity}% 󰁺",
+    "format-_20": "{capacity}% 󰁻",
+    "format-_30": "{capacity}% 󰁼",
+    "format-_40": "{capacity}% 󰁽",
+    "format-_50": "{capacity}% 󰁾",
+    "format-_60": "{capacity}% 󰁿",
+    "format-_70": "{capacity}% 󰁿",
+    "format-_80": "{capacity}% 󰁿",
+    "format-_90": "{capacity}% 󰁿",
+    "format-_95": "{capacity}% 󰁹",
+    "format-_100": "{capacity}% 󰂃",
+    "format-charging-_5": "{capacity}% 󰢟",
+    "format-charging-_10": "{capacity}% 󰢜",
+    "format-charging-_20": "{capacity}% 󰂆",
+    "format-charging-_30": "{capacity}% 󰂇",
+    "format-charging-_40": "{capacity}% 󰂈",
+    "format-charging-_50": "{capacity}% 󰢝",
+    "format-charging-_60": "{capacity}% 󰂉",
+    "format-charging-_70": "{capacity}% 󰢞",
+    "format-charging-_80": "{capacity}% 󰂊",
+    "format-charging-_90": "{capacity}% 󰂋",
+    "format-charging-_95": "{capacity}% 󰂅",
+    "format-charging-_100": "{capacity}% 󰂃",
     "format-plugged": "{capacity}% 󰄌"
   },
 

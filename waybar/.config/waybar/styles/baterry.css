@@ -1,0 +1,170 @@
+#battery {
+  color: #ff003c;
+  text-shadow: 0 0 10px #ff003c;
+  background-color: @clock-background-color;
+}
+
+/* #battery.plugged {
+  color: #00f0ff;
+} */
+
+#battery._5 {
+  color: @baterry-_5-color;
+  background-color: transparent;
+  text-shadow: 0 0 10px @baterry-background-texshadow-color;
+}
+
+#battery._10 {
+  color: @baterry-_10-color;
+  background-color: @baterry-_10-background;
+  text-shadow: 0 0 10px @baterry-_10-texshadow;
+}
+
+#battery._20 {
+  color: @baterry-_20-color;
+  background-color: @baterry-_20-background;
+  text-shadow: 0 0 10px @baterry-_20-texshadow;
+}
+
+#battery._30 {
+  color: @baterry-_30-color;
+  background-color: @baterry-_30-background;
+  text-shadow: 0 0 10px @baterry-_30-texshadow;
+}
+
+#battery._40 {
+  color: @baterry-_40-color;
+  background-color: @baterry-_40-background;
+  text-shadow: 0 0 10px @baterry-_40-texshadow;
+}
+
+#battery._50 {
+  color: @baterry-_50-color;
+  background-color: @baterry-_50-background;
+  text-shadow: 0 0 10px @baterry-_50-texshadow;
+}
+
+#battery._60 {
+  color: @baterry-_60-color;
+  background-color: @baterry-_60-background;
+  text-shadow: 0 0 10px @baterry-_60-texshadow;
+}
+
+#battery._70 {
+  color: @baterry-_70-color;
+  background-color: @baterry-_70-background;
+  text-shadow: 0 0 10px @baterry-_70-texshadow;
+}
+
+#battery._80 {
+  color: @baterry-_80-color;
+  background-color: @baterry-_80-background;
+  text-shadow: 0 0 10px @baterry-_80-texshadow;
+}
+
+#battery._90 {
+  color: @baterry-_90-color;
+  background-color: @baterry-_90-background;
+  text-shadow: 0 0 10px @baterry-_90-texshadow;
+}
+
+#battery._95 {
+  color: @baterry-_95-color;
+  background-color: @baterry-_95-background;
+  text-shadow: 0 0 10px @baterry-_95-texshadow;
+}
+
+#battery._100 {
+  color: @baterry-_100-color;
+  background-color: @baterry-_100-background;
+  text-shadow: 0 0 10px @baterry-_100-texshadow;
+}
+
+#battery.charging._5 {
+  color: @baterry-charging-_5-color;
+  background-color: @baterry-charging-_5-background;
+  text-shadow: 0 0 10px @baterry-charging-_5-texshadow;
+}
+
+#battery.charging._10 {
+  color: @baterry-charging-_10-color;
+  background-color: @baterry-charging-_10-background;
+  text-shadow: 0 0 10px @baterry-charging-_10-texshadow;
+}
+
+#battery.charging._20 {
+  color: @baterry-charging-_20-color;
+    background-color: @baterry-charging-_20-background;
+  text-shadow: 0 0 10px @baterry-charging-_20-texshadow;
+}
+
+#battery.charging._30 {
+  color: @baterry-charging-_30-color;
+    background-color: @baterry-charging-_30-background;
+  text-shadow: 0 0 10px @baterry-charging-_30-texshadow;
+}
+
+#battery.charging._40 {
+  color: @baterry-charging-_40-color;
+  background-color: @baterry-charging-_40-background;
+  text-shadow: 0 0 10px @baterry-charging-_40-texshadow;
+}
+
+#battery.charging._50 {
+  color: @baterry-charging-_50-color;
+    background-color: @baterry-charging-_50-background;
+  text-shadow: 0 0 10px @baterry-charging-_50-texshadow;
+}
+
+#battery.charging._60 {
+  color: @baterry-charging-_60-color;
+    background-color: @baterry-charging-_60-background;
+  text-shadow: 0 0 10px @baterry-charging-_60-texshadow;
+}
+
+#battery.charging._70 {
+  color: @baterry-charging-_70-color;
+    background-color: @baterry-charging-_70-background;
+  text-shadow: 0 0 10px @baterry-charging-_70-texshadow;
+}
+
+#battery.charging._80 {
+  color: @baterry-charging-_80-color;
+    background-color: @baterry-charging-_80-background;
+  text-shadow: 0 0 10px @baterry-charging-_80-texshadow;
+}
+
+#battery.charging._90 {
+  color: @baterry-charging-_90-color;
+    background-color: @baterry-charging-_90-background;
+  text-shadow: 0 0 10px @baterry-charging-_90-texshadow;
+}
+
+#battery.charging._95 {
+  color: @baterry-charging-_95-color;
+    background-color: @baterry-charging-_95-background;
+  text-shadow: 0 0 10px @baterry-charging-_95-texshadow;
+}
+
+#battery.charging._100 {
+  color: @baterry-charging-_100-color;
+    background-color: @baterry-charging-_100-background;
+  text-shadow: 0 0 10px @baterry-charging-_100-texshadow;
+}
+
+#battery._40:not(.charging) {
+  color: @baterry-_5-blink-color;
+  background-color: @baterry-_5-blink-background;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  to {
+    background-color: @baterry-_5-blink-to-color;
+    color: @baterry-blink-_5-to-background;
+  }
+}
