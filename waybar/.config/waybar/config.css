@@ -16,135 +16,108 @@
 /* baterry */
 
 @define-color baterry-color #ff003c;
-@define-color baterry-background transparent;
-@define-color baterry-texshadow #ff003c;
+@define-color baterry-background-color transparent;
+@define-color baterry-background-texshadow-color #ff003c;
+@define-color baterry-charging-color #FFFFFF;
+@define-color baterry-charging-background transparent;
+@define-color baterry-charging-texshadow-color #FFFFFF;
+@define-color baterry-blink-color #ffffff;
+@define-color baterry-blink-background transparent;
 
-@define-color baterry-_5-blink-color #000000; 
-@define-color baterry-_5-blink-background #ffffff; 
-@define-color baterry-_5-blink-to-color #9E0B0B;
-@define-color baterry-_5-blink-to-background #9E0B0B;
+@define-color baterry-_5-color @baterry-color;
+@define-color baterry-_5-background @baterry-background-color;
+@define-color baterry-_5-texshadow @baterry-background-texshadow-color;
+@define-color baterry-_5-charging-color #ff003c;
+@define-color baterry-_5-charging-background transparent;
+@define-color baterry-_5-charging-texshadow #ff003c;
+@define-color baterry-_5-blink-color #000000;
+@define-color baterry-_5-blink-background #9E0B0B;
 
-@define-color baterry-_10-blink-color #ffffff;
-@define-color baterry-_10-blink-background #000000;
-@define-color baterry-_10-blink-to-color #ffffff; 
-@define-color baterry-_10-blink-to-background #000000; 
+@define-color baterry-_10-color @baterry-color;
+@define-color baterry-_10-background @baterry-background-color;
+@define-color baterry-_10-texshadow @baterry-background-texshadow-color;
+@define-color baterry-_10-charging-color #ff003c;
+@define-color baterry-_10-charging-background transparent;
+@define-color baterry-_10-charging-texshadow #ff003c;
+@define-color baterry-_10-blink-color @baterry-color;
+@define-color baterry-_10-blink-background @baterry-background-color;
+@define-color baterry-_10-blink-to-color #000000; 
+@define-color baterry-_10-blink-to-background #FFCE00; 
 
-@define-color baterry-_20-blink-color #ffffff;
-@define-color baterry-_20-blink-background #000000;
-@define-color baterry-_20-blink-to-color #9E0B0B;
-@define-color baterry-_20-blink-to-background #9E0B0B;
+@define-color baterry-_20-color @baterry-color;
+@define-color baterry-_20-background @baterry-background-color;
+@define-color baterry-_20-texshadow @baterry-background-texshadow-color;
+@define-color baterry-_20-charging-color #ff003c;
+@define-color baterry-_20-charging-background transparent;
+@define-color baterry-_20-charging-texshadow #ff003c;
+@define-color baterry-_20-blink-color @baterry-color;
+@define-color baterry-_20-blink-background @baterry-background-color;
+@define-color baterry-_20-blink-to-color #FFCE00;
+@define-color baterry-_20-blink-to-background transparent;
 
-@define-color baterry-_5-color #ff003c;
-@define-color baterry-_5-background transparent;
-@define-color baterry-_5-texshadow #ff003c;
+@define-color baterry-_30-color @baterry-color;
+@define-color baterry-_30-background @baterry-background-color;
+@define-color baterry-_30-texshadow @baterry-background-texshadow-color;
+@define-color baterry-_30-charging-color #ff003c;
+@define-color baterry-_30-charging-background transparent;
+@define-color baterry-_30-charging-texshadow #ff003c;
 
-@define-color baterry-_10-color #ff003c;
-@define-color baterry-_10-background transparent;
-@define-color baterry-_10-texshadow #ff003c;
+@define-color baterry-_40-color @baterry-color;
+@define-color baterry-_40-background @baterry-background-color;
+@define-color baterry-_40-texshadow @baterry-background-texshadow-color;
+@define-color baterry-_40-charging-color #ff003c;
+@define-color baterry-_40-charging-background transparent;
+@define-color baterry-_40-charging-texshadow #ff003c;
 
-@define-color baterry-_20-color #ff003c;
-@define-color baterry-_20-background transparent;
-@define-color baterry-_20-texshadow #ff003c;
+@define-color baterry-_50-color @baterry-color;
+@define-color baterry-_50-background @baterry-background-color;
+@define-color baterry-_50-texshadow @baterry-background-texshadow-color;
+@define-color baterry-_50-charging-color #ff003c;
+@define-color baterry-_50-charging-background transparent;
+@define-color baterry-_50-charging-texshadow #ff003c;
 
-@define-color baterry-_30-color #ff003c;
-@define-color baterry-_30-background transparent;
-@define-color baterry-_30-texshadow #ff003c;
+@define-color baterry-_60-color @baterry-color;
+@define-color baterry-_60-background @baterry-background-color;
+@define-color baterry-_60-texshadow @baterry-background-texshadow-color;
+@define-color baterry-_60-charging-color #ff003c;
+@define-color baterry-_60-charging-background transparent;
+@define-color baterry-_60-charging-texshadow #ff003c;
 
-@define-color baterry-_40-color #ff003c;
-@define-color baterry-_40-background transparent;
-@define-color baterry-_40-texshadow #ff003c;
+@define-color baterry-_70-color @baterry-color;
+@define-color baterry-_70-background @baterry-background-color;
+@define-color baterry-_70-texshadow @baterry-background-texshadow-color;
+@define-color baterry-_70-charging-color #ff003c;
+@define-color baterry-_70-charging-background transparent;
+@define-color baterry-_70-charging-texshadow #ff003c;
 
-@define-color baterry-_50-color #9E910B;
-@define-color baterry-_50-background transparent;
-@define-color baterry-_50-texshadow #ff003c;
+@define-color baterry-_80-color @baterry-color;
+@define-color baterry-_80-background @baterry-background-color;
+@define-color baterry-_80-texshadow @baterry-background-texshadow-color;
+@define-color baterry-_80-charging-color #ff003c;
+@define-color baterry-_80-charging-background transparent;
+@define-color baterry-_80-charging-texshadow #ff003c;
 
-@define-color baterry-_60-color #ff003c;
-@define-color baterry-_60-background transparent;
-@define-color baterry-_60-texshadow #ff003c;
+@define-color baterry-_90-color @baterry-color;
+@define-color baterry-_90-background @baterry-background-color;
+@define-color baterry-_90-texshadow @baterry-background-texshadow-color;
+@define-color baterry-_90-charging-color #ff003c;
+@define-color baterry-_90-charging-background transparent;
+@define-color baterry-_90-charging-texshadow #ff003c;
 
-@define-color baterry-_70-color #ff003c;
-@define-color baterry-_70-background transparent;
-@define-color baterry-_70-texshadow #ff003c;
+@define-color baterry-_95-color @baterry-color;
+@define-color baterry-_95-background @baterry-background-color;
+@define-color baterry-_95-texshadow @baterry-background-texshadow-color;
+@define-color baterry-_95-charging-color #ff003c;
+@define-color baterry-_95-charging-background transparent;
+@define-color baterry-_95-charging-texshadow #ff003c;
+@define-color baterry-_95-blink-color blue;
+@define-color baterry-_95-blink-background blue;
 
-@define-color baterry-_80-color #ff003c;
-@define-color baterry-_80-background transparent;
-@define-color baterry-_80-texshadow #ff003c;
-
-@define-color baterry-_90-color #ff003c;
-@define-color baterry-_90-background transparent;
-@define-color baterry-_90-texshadow #ff003c;
-
-@define-color baterry-_95-color #ff003c;
-@define-color baterry-_95-background transparent;
-@define-color baterry-_95-texshadow #ff003c;
-
-@define-color baterry-_100-color #ff003c;
-@define-color baterry-_100-background transparent;
-@define-color baterry-_100-texshadow #ff003c;
-
-@define-color baterry-charging_5-color #ff003c;
-@define-color baterry-charging_5-background transparent;
-@define-color baterry-charging_5-texshadow #ff003c;
-
-@define-color baterry-charging_10-color #ff003c;
-@define-color baterry-charging_10-background transparent;
-@define-color baterry-charging_10-texshadow #ff003c;
-
-@define-color baterry-charging_20-color #ff003c;
-@define-color baterry-charging_20-background transparent;
-@define-color baterry-charging_20-texshadow #ff003c;
-
-@define-color baterry-charging_30-color #ff003c;
-@define-color baterry-charging_30-background transparent;
-@define-color baterry-charging_30-texshadow #ff003c;
-
-@define-color baterry-charging_40-color #ff003c;
-@define-color baterry-charging_40-background transparent;
-@define-color baterry-charging_40-texshadow #ff003c;
-
-@define-color baterry-charging_50-color #ff003c;
-@define-color baterry-charging_50-background transparent;
-@define-color baterry-charging_50-texshadow #ff003c;
-
-@define-color baterry-charging_60-color #ff003c;
-@define-color baterry-charging_60-background transparent;
-@define-color baterry-charging_60-texshadow #ff003c;
-
-@define-color baterry-charging_70-color #ff003c;
-@define-color baterry-charging_70-background transparent;
-@define-color baterry-charging_70-texshadow #ff003c;
-
-@define-color baterry-charging_80-color #ff003c;
-@define-color baterry-charging_80-background transparent;
-@define-color baterry-charging_80-texshadow #ff003c;
-
-@define-color baterry-charging_90-color #ff003c;
-@define-color baterry-charging_90-background transparent;
-@define-color baterry-charging_90-texshadow #ff003c;
-
-@define-color baterry-charging_95-color #ff003c;
-@define-color baterry-charging_90-background transparent;
-@define-color baterry-charging_90-texshadow #ff003c;
-
-@define-color baterry-charging_100-color #ff003c;
-@define-color baterry-charging_100-background transparent;
-@define-color baterry-charging_100-texshadow #ff003c;
-
-
-/* :root {
-    --main-background-color: rgba(220, 242, 26, 0.75);
-    --custom-notification-color: rgba(220, 242, 26, 0.75);
-    --workspace-font-family: "Predator";
-    --workspace-font-size: 25px;
-    --buton-hover-color:  rgba(220, 242, 26, 0.75);
-    --workspaces-buttons-color: rgba(220, 242, 26, 0.75);
-    --workspaces-buttons-active-color: rgba(220, 242, 26, 0.75);
-    --workspaces-buttons-urgent-color: rgba(220, 242, 26, 0.75);
-    --battery-charging-plugged-color: rgba(220, 242, 26, 0.75);
-    --battery-critical-color: rgba(220, 242, 26, 0.75);
-    --battery-warning-color: rgba(220, 242, 26, 0.75);
-    --network-disconnected-color: rgba(220, 242, 26, 0.75);
-    --pulseaudio-low-color: rgba(220, 242, 26, 0.75);
-    --pulseaudio-muted-color: rgba(220, 242, 26, 0.75);
-    --temperature-critical-color: rgba(220, 242, 26, 0.75);
-} */
+@define-color baterry-_100-color @baterry-color;
+@define-color baterry-_100-background @baterry-background-color;
+@define-color baterry-_100-texshadow @baterry-background-texshadow-color;
+@define-color baterry-_100-charging-color #ff003c;
+@define-color baterry-_100-charging-background transparent;
+@define-color baterry-_100-charging-texshadow #ff003c;
+@define-color baterry-_100-blink-color #000000;
+@define-color baterry-_100-blink-background #ffffff;
