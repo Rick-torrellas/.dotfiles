@@ -1,21 +1,17 @@
 #workspaces button {
-  color: #ff003c;
+  color: @workspaces-button-color;
+  text-shadow: 0 0 3px @workspaces-button-textshadow;
+  background-color: @workspaces-button-background;
 }
 
 #workspaces button.active {
-  color: #00f0ff;
+  color: @workspaces-button-active-color;
+  text-shadow: 0 0 3px @workspaces-button-active-textshadow;
+  background-color: @workspaces-button-active-background;
 }
 
 #workspaces button.urgent {
-  color: #fcee09;
-}
-#workspaces {
-  color: @clock-color;
-  background-color: @clock-background-color;
-}
-
-#workspaces {
-  color: #ff003c;
-  text-shadow: 0 0 10px #ff003c;
-  background-color: @clock-background-color;
+  color: @workspaces-button-urgent-color;
+  text-shadow: 0 0 3px @workspaces-button-urgent-textshadow;
+  background-color: @workspaces-button-urgent-background;
 }

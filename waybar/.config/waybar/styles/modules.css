@@ -1,18 +1,21 @@
 .modules-left {
-  background-color: rgba(2, 197, 61, 0.3);
+  background-color: @modules-left-background;
   font-family: "ProggyClean Nerd Font";
   font-size: 23px;
 }
+
 .modules-center {
-  background-color: rgba(2, 197, 61, 0.3);
+  background-color: @modules-center-background;
   font-family: "Predator";
-  font-size: 25px;
+  font-size: 30px;
 }
+
 .modules-right {
-  background-color: rgba(2, 197, 61, 0.3);
+  background-color: @modules-right-background;
   font-family: "ProggyClean Nerd Font";
   font-size: 25px;
 }
+
 .modules-right,
 .modules-center,
 .modules-left {

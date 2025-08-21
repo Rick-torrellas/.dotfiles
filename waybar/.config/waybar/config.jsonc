@@ -82,6 +82,9 @@
       "(.*) Mozilla Firefox": "  $1",
       "(.*) - kitty": "󱤐 [$1]"
     },
+    "max-length": 15,
+    "tooltip": true,
+    "ellipsis": "…",
     "separate-outputs": true
   },
 
@@ -206,7 +209,7 @@
   },
   "custom/notification": {
     "tooltip": false,
-    "format": "{icon}",
+    "format": "{icon} ",
     "format-icons": {
       "notification": "<span foreground='red'><sup></sup></span>",
       "none": "",

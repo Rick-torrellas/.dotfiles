@@ -1,9 +1,11 @@
 #temperature.critical {
-  color: #fcee09;
+  color: @temperature-critical-color;
+  background-color: @temperature-critical-background;
+  text-shadow: 0 0 3px @temperature-critical-textshadow;
 }
 
 #temperature {
-  color: #ff003c;
-  text-shadow: 0 0 10px #ff003c;
-  background-color: @clock-background-color;
+  color: @temperature-color;
+  text-shadow: 0 0 3px @temperature-textshadow;
+  background-color: @temperature-background;
 }

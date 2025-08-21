@@ -10,6 +10,7 @@
 @import url("styles/clock.css");
 @import url("styles/baterry.css");
 @import url("styles/backlight.css");
+@import url("styles/idle_inhibitor.css");
 
 /* ╔═════════════════════════════╗
    ║     Global & Random   ║
@@ -26,6 +27,8 @@ window#waybar {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
+
+/* TODO: colocarlo en sus respectivas propiedades */
 
 #clock,
 #languaje,

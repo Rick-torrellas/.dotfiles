@@ -1,0 +1,11 @@
+#idle_inhibitor.actived {
+    color: @idle-inhibitor-actived-color;
+    text-shadow: 0 0 3px @idle-inhibitor-actived-textshadow;
+    background-color: @idle-inhibitor-actived-background;
+}
+
+#idle_inhibitor.deactivated {
+    color: @idle-inhibitor-deactivated-color;
+    text-shadow: 0 0 3px @idle-inhibitor-deactivated-textshadow;
+    background-color: @idle-inhibitor-deactivated-background;
+}

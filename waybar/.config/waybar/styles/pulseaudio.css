@@ -1,12 +1,17 @@
 #pulseaudio.low {
-  color: #fcee09;
+  color: @pulseaudio-low-color;
+  background-color: @pulseaudio-low-background;
+  text-shadow: 0 0 3px @pulseaudio-low-textshadow;
 }
+
 #pulseaudio.muted {
-  color: #fcee09;
+  color: @pulseaudio-muted-color;
+  background-color: @pulseaudio-muted-background;
+  text-shadow: 0 0 3px @pulseaudio-muted-textshadow;
 }
 
 #pulseaudio {
-  color: #ff003c;
-  text-shadow: 0 0 10px #ff003c;
-  background-color: @clock-background-color;
+  color: @pulseaudio-color;
+  background-color: @pulseaudio-background;
+  text-shadow: 0 0 3px @pulseaudio-textshadow;
 }

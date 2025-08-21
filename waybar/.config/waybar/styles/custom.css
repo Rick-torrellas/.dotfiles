@@ -1,23 +1,20 @@
 #custom-media {
-  background-color: #66cc99;
-  color: #2a5c45;
+  background-color: @custom-media-background;
+  color: @custom-media-color;
   min-width: 100px;
 }
 
 #custom-media.custom-spotify {
-  background-color: #66cc99;
+  background-color: @custom-media-custom-spotify-background;
 }
 
 #custom-media.custom-vlc {
-  background-color: #ffa000;
+  background-color: @custom-media-custom-vlc-background;
 }
 
 #custom-notification {
+  color: @custom-notification-color;
+  text-shadow: 0 0 3px @custom-notification-textshadow;
+  background-color: @custom-notification-background;
   padding: 0 15px;
-}
-
-#custom-notification {
-  color: #ff003c;
-  text-shadow: 0 0 10px #ff003c;
-  background-color: @clock-background-color;
 }

@@ -1,5 +1,5 @@
 #backlight {
-  color: #ff003c;
-  text-shadow: 0 0 10px #ff003c;
-  background-color: @clock-background-color;
+  color: @backlight-color;
+  text-shadow: 0 0 3px @backlight-textshadow;
+  background-color: @backligh-background;
 }

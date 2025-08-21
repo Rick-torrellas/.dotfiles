@@ -1,9 +1,11 @@
 #network.disconnected {
-  color: #fcee09;
+  color: @network-disconnected-color;
+  text-shadow: 0 0 3px @network-disconnected-textshadow;
+  background-color: @network-disconnected-background;
 }
 
 #network {
-  color: #ff003c;
-  text-shadow: 0 0 10px #ff003c;
-  background-color: @clock-background-color;
+  color: @network-color;
+  text-shadow: 0 0 3px @network-textshadow;
+  background-color: @network-background;
 }
