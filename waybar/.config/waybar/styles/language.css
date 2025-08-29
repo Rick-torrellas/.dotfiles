@@ -1,0 +1,5 @@
+#language {
+    color: @langiage-color;
+    background: @language-background;
+    text-shadow: @language-textshadow;
+}

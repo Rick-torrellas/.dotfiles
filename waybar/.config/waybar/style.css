@@ -11,13 +11,13 @@
 @import url("styles/baterry.css");
 @import url("styles/backlight.css");
 @import url("styles/idle_inhibitor.css");
+@import url("styles/language.css");
 
 /* ╔═════════════════════════════╗
    ║     Global & Random   ║
    ╚═════════════════════════════╝ */
 
 window#waybar {
-  color: #ff003c;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 15px;
   transition-property: background-color;

@@ -1,37 +1,55 @@
-@define-color main-background-color rgba(237, 5, 9, 0.20);
-@define-color custom-notification-color #ff003c;
+@define-color main-background rgba(16, 0, 218, 0.3);
+@define-color main-color #ff003c;
+@define-color main-textshadow #ff003c;
+@define-color main-each-module-background transparent;
 
-/* backlight */
+/* modules */
 
-@define-color backlight-color #ff003c;
-@define-color backlight-background transparent;
-@define-color backlight-textshadow #ff003c;
+@define-color modules-left-background @main-background;
+@define-color modules-center-background @main-background;
+@define-color modules-right-background @main-background;
+
+/* modile left */
+
+/* clock */
+
+@define-color clock-color @main-color;
+@define-color clock-background @main-each-module-background;
+@define-color clock-textshadow @main-textshadow;
+
+/* language */
+
+@define-color langiage-color @main-color;
+@define-color language-background @main-each-module-background;
+@define-color language-textshadow @main-textshadow;
+
+/* module right */
+
+
 
 /* button */
 
 @define-color button-box-shadow transparent;
 @define-color button-hover-box-shadow #ff003c;
 
-/* clock */
+/* backlight */
 
-@define-color clock-color #ff003c;
-@define-color clock-background transparent;
-@define-color clock-textshadow #ff003c;
+@define-color backlight-color @main-color;
+@define-color backlight-background @main-each-module-background;
+@define-color backlight-textshadow @main-textshadow;
+
+
 
 /* indle inhibitor */
 
-@define-color idle-inhibitor-actived-color #ff003c;
-@define-color idle-inhibitor-actived-background transparent;
-@define-color idle-inhibitor-actived-textshadow #ff003c;
-@define-color idle-inhibitor-deactivated-color #ff003c;
-@define-color idle-inhibitor-deactivated-background transparent;
-@define-color idle-inhibitor-deactivated-textshadow #ff003c;
+@define-color idle-inhibitor-activated-color @main-color;
+@define-color idle-inhibitor-activated-background @main-background;
+@define-color idle-inhibitor-activated-textshadow @main-textshadow;
+@define-color idle-inhibitor-deactivated-color @main-color;
+@define-color idle-inhibitor-deactivated-background @main-background;
+@define-color idle-inhibitor-deactivated-textshadow @main-textshadow;
 
-/* modules */
 
-@define-color modules-left-background rgba(2, 197, 61, 0.3);
-@define-color modules-center-background rgba(2, 197, 61, 0.3);
-@define-color modules-right-background rgba(2, 197, 61, 0.3);
 
 /* network */
 
@@ -80,7 +98,7 @@
 
 @define-color window-color #ff003c;
 @define-color window-background transparent;
-@define-color window-background-textshadow #ff003c;
+@define-color window-textshadow #ff003c;
 
 /* custom */
 

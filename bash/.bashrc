@@ -21,3 +21,4 @@ export HISTSIZE=10000
 export HISTFILESIZE=20000
 
 eval "$(starship init bash)"
+PATH=~/.console-ninja/.bin:$PATH
